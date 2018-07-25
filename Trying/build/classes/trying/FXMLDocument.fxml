@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AuthenticationController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <TextField fx:id="keyword" layoutX="97.0" layoutY="15.0" prefHeight="44.0" prefWidth="363.0" promptText="Search Here...">
+         <font>
+            <Font name="Segoe UI" size="19.0" />
+         </font>
+      </TextField>
+      <Button layoutX="460.0" layoutY="14.0" mnemonicParsing="false" onAction="#LoginDialog" prefHeight="44.0" prefWidth="95.0" text="Search" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="Tw Cen MT" size="22.0" />
+         </font>
+         <effect>
+            <ColorAdjust brightness="-0.01" contrast="0.05" hue="-0.93" saturation="0.69" />
+         </effect>
+      </Button>
+      <MenuButton fx:id="kategori" layoutY="14.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="98.0" text="Kategori">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Nama" />
+            <MenuItem mnemonicParsing="false" text="Kemampuan" />
+            <MenuItem mnemonicParsing="false" text="Jabatan" />
+            <MenuItem mnemonicParsing="false" text="Perusahaan" />
+         </items>
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <ColorAdjust contrast="-0.07" hue="0.88" saturation="0.62" />
+         </effect>
+      </MenuButton>
+      <Label fx:id="dasar" layoutX="106.0" layoutY="77.0" text="iraS">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="106.0" layoutY="116.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

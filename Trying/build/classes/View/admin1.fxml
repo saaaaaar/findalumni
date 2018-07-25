@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1360.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.manajemenController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffeb0fcd" height="141.0" layoutY="579.0" stroke="TRANSPARENT" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="10.0" width="1360.0" />
+      <Text fill="#ffb337" fontSmoothingType="LCD" layoutX="485.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" build the synergy" textAlignment="CENTER">
+         <font>
+            <Font name="Schadow BT Bold" size="45.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="gmb1" fitHeight="193.0" fitWidth="248.0" layoutX="563.0" layoutY="71.0">
+         <image>
+            <Image url="@icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gmb2" fitHeight="64.0" fitWidth="229.0" layoutX="573.0" layoutY="190.0">
+         <image>
+            <Image url="@tulisan.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gmb3" fitHeight="169.0" fitWidth="383.0" layoutX="-1.0" layoutY="545.0">
+         <image>
+            <Image url="@Logo%20UII.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="4.0" layoutY="709.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright © 2017 Find Alumni UII">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Text>
+      <Button layoutX="563.0" layoutY="310.0" mnemonicParsing="false" onAction="#SearchButton" prefHeight="44.0" prefWidth="95.0" text="Search" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="Tw Cen MT" size="22.0" />
+         </font>
+         <effect>
+            <ColorAdjust brightness="-0.01" contrast="0.05" hue="-0.93" saturation="0.69" />
+         </effect>
+      </Button>
+      <Text layoutX="628.0" layoutY="624.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kampus Terpadu UII" textAlignment="CENTER" wrappingWidth="135.138671875" />
+      <Text layoutX="634.0" layoutY="675.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telepon: 0274-898444" />
+      <Text layoutX="645.0" layoutY="659.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Faks: 0274-898459" />
+      <Text layoutX="640.0" layoutY="691.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email: info@uii.ac.id" />
+      <Text layoutX="496.0" layoutY="641.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Gedung GBPH Prabuningrat Jl. Kaliurang km 14,5 Yogyakarta 55584" textAlignment="CENTER" wrappingWidth="397.13873291015625" />
+      <Text fill="#252424" fontSmoothingType="LCD" layoutX="665.0" layoutY="605.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact Us">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#030303" fontSmoothingType="LCD" layoutX="1076.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome, Admin!">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Button layoutX="677.0" layoutY="310.0" mnemonicParsing="false" onAction="#NewAlumniButton" prefHeight="44.0" prefWidth="150.0" text="New Data" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="Tw Cen MT" size="22.0" />
+         </font>
+         <effect>
+            <ColorAdjust brightness="-0.01" contrast="0.05" hue="-0.93" saturation="0.69" />
+         </effect>
+      </Button>
+      <Button layoutX="1257.0" layoutY="8.0" mnemonicParsing="false" onAction="#LogOutButton" prefHeight="13.0" prefWidth="95.0" text="Logout" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="Tw Cen MT" size="22.0" />
+         </font>
+         <effect>
+            <ColorAdjust brightness="-0.01" contrast="0.05" hue="-0.93" saturation="0.69" />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

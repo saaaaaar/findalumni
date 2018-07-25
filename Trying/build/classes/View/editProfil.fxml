@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1360.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.profilController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bababae7" height="649.0" layoutY="72.0" stroke="TRANSPARENT" strokeType="INSIDE" width="271.0" />
+      <ButtonBar layoutX="116.0" layoutY="153.0" prefHeight="40.0" prefWidth="200.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1b338f" height="74.0" layoutY="-2.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1360.0" />
+      <Text layoutX="18.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PERSONAL">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="100.0" layoutX="116.0" layoutY="253.0" startX="-100.0" />
+      <Text layoutX="18.0" layoutY="443.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CONTACTS">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="100.0" layoutX="116.0" layoutY="446.0" startX="-100.0" />
+      <Line endX="780.0" layoutX="384.0" layoutY="128.0" smooth="false" startX="-180.0" stroke="#00000080" strokeWidth="0.5" translateX="110.0" />
+      <Text layoutX="315.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EDUCATIONS">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="365.0" layoutX="413.0" layoutY="268.0" startX="-100.0" />
+      <Text layoutX="874.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EXPERIENCES">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="289.0" layoutX="972.0" layoutY="268.0" startX="-100.0" />
+      <Text layoutX="315.0" layoutY="439.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SKILLS">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="365.0" layoutX="413.0" layoutY="442.0" startX="-100.0" />
+      <ImageView fx:id="gmb2" fitHeight="56.0" fitWidth="40.0" layoutX="572.0" layoutY="280.0">
+         <image>
+            <Image url="@LogoAja.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="314.0" layoutY="542.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AWARDS &amp; ACHIEVEMENTS">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4f5051" height="30.0" layoutX="-1.0" layoutY="693.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" width="1362.0" />
+      <Text fill="WHITE" layoutX="8.0" layoutY="709.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright © 2017 Find Alumni UII" />
+      <Button layoutX="1258.0" layoutY="23.0" mnemonicParsing="false" onAction="#homepageButton" text="Back to Home" />
+      <Button layoutX="1266.0" layoutY="90.0" mnemonicParsing="false" onAction="#editprofilalumni" text="Edit Profile" />
+      <ImageView fitHeight="85.0" fitWidth="200.0" layoutX="-2.0" layoutY="-7.0">
+         <image>
+            <Image url="@Logo%20UII%20Kuning.png" />
+         </image>
+      </ImageView>
+      <GridPane layoutX="18.0" layoutY="259.0" prefHeight="112.0" prefWidth="244.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="117.0" minWidth="10.0" prefWidth="78.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="166.0" minWidth="10.0" prefWidth="166.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="17.0" prefWidth="94.0" text="Date of Birth" />
+            <Label prefHeight="17.0" prefWidth="94.0" text="Nationality" GridPane.rowIndex="1" />
+            <Label prefHeight="17.0" prefWidth="94.0" text="Occupation" GridPane.rowIndex="2" />
+            <Label prefHeight="17.0" prefWidth="94.0" text="Company" GridPane.rowIndex="3" />
+            <Label fx:id="lbDOB" prefHeight="17.0" prefWidth="163.0" GridPane.columnIndex="1" />
+            <Label fx:id="lbNationality" prefHeight="17.0" prefWidth="164.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="lbOccupation" prefHeight="17.0" prefWidth="165.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="lbCompany" prefHeight="17.0" prefWidth="164.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="Position" GridPane.rowIndex="4" />
+            <Label fx:id="lbPosition" prefHeight="17.0" prefWidth="163.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <ImageView fx:id="gmb31" fitHeight="56.0" fitWidth="54.0" layoutX="308.0" layoutY="280.0">
+         <image>
+            <Image url="@LogoSmagi.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gmb311" fitHeight="56.0" fitWidth="54.0" layoutX="309.0" layoutY="350.0">
+         <image>
+            <Image url="@LogoSmagi.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="lbSkills" layoutX="313.0" layoutY="451.0" prefHeight="56.0" prefWidth="459.0" />
+      <Label fx:id="lbAwards" layoutX="313.0" layoutY="557.0" prefHeight="30.0" prefWidth="390.0" />
+      <Label fx:id="idAlumni" layoutX="200.0" layoutY="235.0" text="     " />
+      <Label fx:id="lbFullname" layoutX="317.0" layoutY="93.0" prefHeight="33.0" prefWidth="466.0" text="Alumni's Name Here">
+         <font>
+            <Font name="Exotc350 Bd BT Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbDescription" alignment="TOP_LEFT" layoutX="316.0" layoutY="138.0" prefHeight="106.0" prefWidth="938.0" text="Describetion Here" wrapText="true">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </Label>
+      <Text layoutX="20.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone" />
+      <Text layoutX="19.0" layoutY="487.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telephone" />
+      <Text layoutX="19.0" layoutY="508.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+      <Text layoutX="19.0" layoutY="529.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" />
+      <Label fx:id="lbNoHp" layoutX="88.0" layoutY="452.0" prefHeight="17.0" prefWidth="109.0" text="xxx-xxx-xxx-xxx" />
+      <Label fx:id="lbNoTelp" layoutX="88.0" layoutY="473.0" prefHeight="17.0" prefWidth="117.0" text="xxxx-xxxxxx" />
+      <Label fx:id="lbEmail" layoutX="87.0" layoutY="494.0" prefHeight="17.0" prefWidth="169.0" text="xxxx@gmail.com" />
+      <Label fx:id="lbAddress" alignment="TOP_LEFT" layoutX="86.0" layoutY="517.0" prefHeight="160.0" prefWidth="169.0" text="---" />
+      <ImageView fx:id="gmb1" layoutX="56.0" layoutY="78.0">
+         <image>
+            <Image url="@layer%205.png" />
+         </image>
+      </ImageView>
+      <Line endX="365.0" layoutX="412.0" layoutY="547.0" startX="-100.0" />
+      <Label fx:id="lbExperience" alignment="TOP_LEFT" layoutX="878.0" layoutY="276.0" prefHeight="404.0" prefWidth="412.0" text="Ketua Himpunan Mahasiswa Teknik Informatika                          Universitas Islam Indonesia (2012)" wrapText="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="372.0" text="Major" />
+      <Label fx:id="lbMajor" layoutX="100.0" layoutY="373.0" prefHeight="17.0" prefWidth="163.0" />
+      <Label layoutX="18.0" layoutY="395.0" text="Attend - Grad" />
+      <Label fx:id="lbAttGrad" layoutX="99.0" layoutY="396.0" prefHeight="17.0" prefWidth="163.0" />
+      <Label fx:id="lbSMP" layoutX="373.0" layoutY="280.0" prefHeight="56.0" prefWidth="186.0" text="Label" />
+      <Label fx:id="lbSMA" layoutX="373.0" layoutY="350.0" prefHeight="56.0" prefWidth="186.0" text="Label" />
+      <Label fx:id="lbKuliah" layoutX="621.0" layoutY="280.0" prefHeight="56.0" prefWidth="186.0" text="Label" />
+   </children>
+</AnchorPane>
